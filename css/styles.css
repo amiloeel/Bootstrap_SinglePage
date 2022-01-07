@@ -278,6 +278,105 @@ header, .navbar {
 }
 
 
+/* Rodapé */
+#contact-area {
+    text-align: center;    
+    background-color: #dcf8ff;
+}
+
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #41007e;
+}
+
+.contact-box i {
+    color: #8a2be2;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size:50px;
+    margin-bottom: 50px;
+    transition: .5s;
+}
+
+.contact-box i:hover {
+    color: rgb(79, 170, 255);
+    font-size:56px;
+}
+
+.contact-box p {
+    font-size:22px;
+    color:rgb(0, 24, 160)
+}
+
+.contact-title {
+    color: rgb(0, 10, 48);
+}
+
+#msg-box p {
+    font-size: 22px;
+    color: rgb(0, 10, 48);
+    line-height: 200px;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+#contact-form .main-btn{
+    background-color: rgb(0, 10, 48);
+    border:none;
+    margin-top: 20px;
+    width: auto;
+    height: 50px;
+    line-height: 50%;
+}
+
+#contact-form .main-btn:hover{
+    background-color: rgb(7, 91, 168);
+    border:none;
+}
+
+#msg-box i {
+    font-size: 30px;
+    margin-left: 10px;
+    transition:.8s;
+}
+
+#msg-box i:hover {
+    font-size: 35px;
+    margin-left: 25px;
+}
+
+#copy-area {
+    background-color: rgba(0, 10, 48, 0.904);
+    
+}
+
+#copy-area .container p{
+    margin-bottom: 0;
+    font-size:18px;
+    color:rgb(205, 157, 250);
+}
+
+#copy-area .container a{
+    font-weight: bold;
+    color:rgb(205, 157, 250);
+    font-size:18px;
+    text-decoration: none;
+}
+
+#copy-area .container a:hover{
+    color:rgb(173, 215, 255);
+}
+
+#copy-area .container{
+    padding: 10px 0;
+    text-align: center;
+}
+
 /*-----------------------------------------------------------
 Necessário para modificar o tamanho dos botões do carrossel*/
 .fontIcon {
