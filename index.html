@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrudeia - Soluções em Corte a Laser</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Scripts -->
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- Bootstrap Script-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/185dbffc97.js" crossorigin="anonymous"></script>
+        <!-- Progress Bar-->
+        <script src="js/progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <!-- Navegação Topo -->
+    <header>
+        <div class="container" id="nav-container">
+            <!-- Barra de Navegação -->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <!-- Logotipo da Barra-->
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="img/logo.png" alt="Arrudeia Logotipo"> ARRUDEIA - Soluções em Corte a Laser
+                </a>
+                <!-- Menu Hamburger (apenas mobile)-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Lista de Seções -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu">Lar</a>
+                        <a class="nav-item nav-link" id="about-menu">Arrudeia?</a>
+                        <a class="nav-item nav-link" id="services-menu">Serventias</a>
+                        <a class="nav-item nav-link" id="team-menu">A Galera</a>
+                        <a class="nav-item nav-link" id="portfolio-menu">Bonitezas</a>
+                        <a class="nav-item nav-link" id="contact-menu">Trocar Ideia</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Conteúdo -->
+        <div class="container-fluid">
+
+            <!-- 1a seção: Slides -->
+            <div id="mainSlider" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Indicador Slide-->
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1"></li>
+                    <li data-target="#mainSlider" data-slide-to="2"></li>
+                </ol>
+
+                    <!-- Conteúdo Slides -->
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="img/slide0.jpg" class="d-block w-100" alt="Prototipagem">
+                            <!-- Legenda Slide 1 -->
+                            <div class="carousel-caption d-md-block">
+                                <h1>Quer tirar seu projeto do papel?</h1>
+                                <p>Crie conosco protótipos completos a partir do esboço!</p>
+                                <a href="http://instagram.com/atelierarrudeia" class="main-btn" target="_blank">acesse nossos produtos</a>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <img src="img/slide1.jpg" class="d-block w-100" alt="Cores">
+                            <!-- Legenda Slide 2 -->
+                            <div class="carousel-caption d-md-block">
+                                <h1>Acabamento profissional em cores!</h1>
+                                <p>Escolha os tons perfeitos pra cada parte do seu produto.</p>
+                                <a href="http://instagram.com/atelierarrudeia" class="main-btn" target="_blank">acesse nossos produtos</a>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <img src="img/slide2.jpg" class="d-block w-100" alt="Precisão">
+                            <!-- Legenda Slide 3 -->
+                            <div class="carousel-caption d-md-block">
+                                <h1>Para projetos simples e avançados.</h1>
+                                <p>Use nossa tecnologia para construir o que deseja!</p>
+                                <a href="http://instagram.com/atelierarrudeia" class="main-btn" target="_blank">acesse nossos produtos</a>
+                            </div>
+                        </div> 
+                    </div>
+              
+                <!-- Controles Laterais dos Slides-->
+                <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon fontIcon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon fontIcon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            
+            <!-- 2a seção: Sobre -->
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+                        <!-- Linha de 12 colunas -->
+                        <div class="col-12">
+                            <h3 class="main-title">Sobre a Gente</h3>
+                        </div>
+                        <!-- Duas partes de 6 colunas -->
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="img/placa.jpg" alt="Placa">
+                        </div>
+                        <div class="col-md-6" id="abouts">
+                            <p>Nordestina com muito orgulho!</p>
+                            <p>Nossa empresa traz a materialização de sonhos e ideias para lindos modelos em materiais selecionados e com acabamento de primeira!</p>
+                            <p>Crie conosco de presentes personalizados até utensílios milimetricamente calculados para suas necessidades.</p>
+                            <p>Aproveite nosso catálogo de produtos para escolher lindezas pra sua casa ou entre em contato para solicitar um orçamento de um novo produto.</p>
+                            <ul id="about-list">
+                                <li>Produtos 100% personalizáveis <i class="fas fa-check"></i></li>
+                                <li> Materiais de alta qualidade <i class="fas fa-check"></i></li>
+                                <li> Precisão e excelência na construção <i class="fas fa-check"></i></li>
+                                <li> Tecnologias de ponta <i class="fas fa-check"></i></li>
+                                <li> Frete grátis pra todo o Brasil* <i class="fas fa-check"></i></li>
+                                <p style="font-size:13px;color:blueviolet"> 
+                                    *Exceto Sul, Sudeste, Norte e Centro-Oeste
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3a seção: Serventias-->
+            <div id="services-area">
+                <div class="container">
+                    <div class="row">
+                         <!-- Linha de 12 colunas -->
+                         <div class="col-12">
+                            <h3 class="main-title">Nossos Serviços</h3>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-pencil-alt"></i>
+                            <h4>Prototipagem de Modelos</h4>
+                            <p>Tire suas ideias do papel e construa conosco seus modelos 2D ou 3D</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-fish"></i>
+                            <h4>Lançamentos Autorais</h4>
+                            <p>Possuímos nossos próprios produtos desenvolvidos especialmente pra você</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-birthday-cake"></i>
+                            <h4>Festinhas e Afins</h4>
+                            <p>Conte conosco para criar toda a decoração personalizada de suas festividades</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-clock"></i>
+                            <h4>Aluguel de Serviços</h4>
+                            <p>Utilize nossas tecnologias através do sistema de aluguel por hora</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-concierge-bell"></i>
+                            <h4>Linha Direta</h4>
+                            <p>Fique em contato conosco a todo momento para informações sobre os produtos</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-tools"></i>
+                            <h4>Apoio em Projeto</h4>
+                            <p>Receba ajuda de nossos especialistas para desenvolver seu modelo ideal</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4a seção: Progress Circles -->
+            <div id="data-area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 col-xs-6 circle-box">
+                      <div id="circleA"></div>
+                      <p>Clientes <br>Satisfeitos</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 circle-box">
+                      <div id="circleB"></div>
+                      <p>Produtos Disponíveis</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 circle-box">
+                      <div id="circleC"></div>
+                      <p>Festas Personalizadas</p>
+                    </div>  
+                    <div class="col-md-3 col-xs-6 circle-box">
+                      <div id="circleD"></div>
+                      <p>Horas de <br>Produção</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- 5a seção: Time -->
+            <div id="team-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossa Equipe</h3>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="card shadow">
+                                <a href="https://www.linkedin.com/in/dellamariadriam/" target="_blank">
+                                <img src="img/ad.jpg" alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Adriam Dellamari</h5>
+                                        <p class="card-text">Marketing</p>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-half-offset">
+                            <div class="card shadow">
+                                <a href="https://www.instagram.com/arthurlimaq/" target="_blank">
+                                <img src="img/al.jpg" alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Arthur Queiroz</h5>
+                                        <p class="card-text">Materiais</p>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-half-offset">
+                            <div class="card shadow">
+                                <a href="https://www.linkedin.com/in/marinaqlima/" target="_blank">
+                                <img src="img/ml.jpg" alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Marina Lima</h5>
+                                        <p class="card-text">Design de Produtos</p>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-half-offset">
+                            <div class="card shadow">
+                                <a href="https://www.linkedin.com/in/sarahgumy/" target="_blank">
+                                <img src="img/sk.jpg" alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sarah Kim</h5>
+                                        <p class="card-text">Vetorização</p>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-half-offset">
+                            <div class="card shadow">
+                                <a href="https://www.linkedin.com/in/leandro-lima-572953191/" target="_blank">
+                                <img src="img/ll.jpg" alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Leandro Lima</h5>
+                                        <p class="card-text">Direção de Arte</p>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6a seção: Produtos -->
+            <div id="products-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Produtos em Destaque</h3>
+                        </div>
+                        <div class="col-md-12" id="filter-btn-box">
+                            <button class="main-btn filter-btn active" id="all-btn">
+                                Todos
+                            </button>
+                            <button class="main-btn filter-btn" id="home-btn">
+                                Casa
+                            </button>
+                            <button class="main-btn filter-btn" id="photo-btn">
+                                Fotos
+                            </button>
+                            <button class="main-btn filter-btn" id="party-btn">
+                                Festas
+                            </button>
+                            <button class="main-btn filter-btn" id="geek-btn">
+                                Geek
+                            </button>
+                            <button class="main-btn filter-btn" id="time-btn">
+                                Relógios
+                            </button>
+                        </div>
+                        
+                        <!-- primeira linha-->
+                        <div class="col-md-2 project-box home">
+                            <img src="img/home1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box photo">
+                            <img src="img/photo1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box party">
+                            <img src="img/party1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box geek">
+                            <img src="img/geek1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box time">
+                            <img src="img/rel1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box home">
+                            <img src="img/home2.jpg" class="img-fluid" alt="">
+                        </div>
+                        
+                        <!-- segunda linha-->
+                        <div class="col-md-2 project-box home">
+                            <img src="img/home3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box photo">
+                            <img src="img/photo2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box party">
+                            <img src="img/party2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box geek">
+                            <img src="img/geek2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box time">
+                            <img src="img/rel2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box geek">
+                            <img src="img/geek3.jpg" class="img-fluid" alt="">
+                        </div>
+                        
+                        <!-- terceira linha-->
+                        <div class="col-md-2 project-box home">
+                            <img src="img/home4.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box photo">
+                            <img src="img/photo3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box party">
+                            <img src="img/party3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box geek">
+                            <img src="img/geek4.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box time">
+                            <img src="img/rel3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 project-box photo">
+                            <img src="img/photo4.jpg" class="img-fluid" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

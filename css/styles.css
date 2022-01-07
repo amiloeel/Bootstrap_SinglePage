@@ -1,0 +1,309 @@
+/* Gerais */
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+
+p {
+    color:rgb(173, 215, 255);
+    font-size: 28px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Barra de Navegação */
+
+header, .navbar {
+    background-color: rgba(0, 10, 48, 0.904);
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width:75px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.navbar-nav a{
+    font-size: 20px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color:rgb(205, 157, 250); 
+}
+
+.navbar-brand:hover {
+    color:rgb(173, 215, 255);
+}
+
+#navbar-links a {
+    color:rgb(205, 157, 250);
+}
+
+#navbar-links a:hover {
+    color:rgb(173, 215, 255);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem 1.5rem;
+}
+
+
+/* Slider */
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider .carousel-caption {
+    top: 40%;
+    text-shadow: 1px 1px 3px black;
+}
+
+#mainSlider .carousel-caption p {
+    color:rgb(173, 215, 255);
+    font-size: 28px;
+    margin-bottom: 100px;
+    text-shadow: 1px 1px 5px black;
+}
+
+
+.main-btn {
+    background-color: rgb(0, 10, 48);
+    color: white;
+    text-transform: uppercase;
+    width: 10px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    border: 3px solid rgb(0, 10, 48);
+    transition: .5s;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 10, 48, 0.521);
+    border-color: rgb(0, 10, 48);
+}
+
+.carousel-indicators .active {
+    background-color: #8a2be2;
+}
+
+
+/* Sobre a empresa */
+#about-area {
+    background-color: #dcf8ff;
+}
+
+
+.main-title {
+    font-size: 35px;
+    color:#41007e;
+    margin: -20px 0 75px 0;
+    text-align: center;
+}
+                     /* cria linha inferior */
+.main-title::after {
+    content: "";
+    border-top: 2px solid #41007e;
+    width: 35%;
+    position: absolute;
+    top: 40px;
+    left: 32.5%;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 5%;
+    margin-top: 30px;
+}
+
+#about-list li {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#about-list i {
+    color: #41007e;
+}
+
+
+/*Serviços*/
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box p {
+    font-size: 20px;
+    color:rgb(0, 10, 48)
+}
+
+.service-box i, .service-box h4 {
+    transition: .5s;
+
+}
+
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #41007e;
+}
+
+.service-box h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #41007e;
+}
+
+.service-box:hover > i, .service-box:hover > h4 {
+    color:rgb(79, 170, 255);
+}
+
+
+/*Dados*/
+.circle-box div{
+    padding: 0 40px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+    text-shadow: 1px 1px 5px black;
+}
+
+#data-area p {
+    color:rgb(220, 186, 252);
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px black;
+}
+
+#data-area {
+    margin-top: -50px;
+}
+
+
+/* Time */
+
+.col-half-offset{
+    margin-left:4.166666667%
+}
+
+#team-area{
+    text-align: center;
+    background-color: #dcf8ff;
+}
+
+#team-area p{
+    font-size: 15px;
+    color: #41007e;
+    text-decoration: none;
+}
+
+#team-area h5{
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#team-area img{
+    width:188px;
+    filter: saturate(0%);
+    transition: .5s;
+}
+
+#team-area img:hover{
+    filter: saturate(50%);
+}
+
+
+/*Produtos*/
+
+#products-area {
+    text-align: center;
+    margin-top:60px;
+}
+
+#products-area button{
+    width: auto;
+    margin: 0 10px 60px 10px;
+    height: 20px;
+    line-height:3px;
+}
+
+#products-area button.active{
+    background-color: #41007e;
+    border-color: #41007e;
+}
+
+#products-area button.active:hover{
+    background-color: #41007e;
+    border-color: #41007e;
+}
+
+#products-area button:hover{
+    background-color: rgb(7, 91, 168);
+    border-color: rgb(7, 91, 168);
+}
+
+#products-area img{
+    box-shadow:5px 5px #8a2be2; 
+    margin-bottom:30px;
+    transition: .5s;
+}
+
+#products-area img:hover{
+    box-shadow:13px 13px rgb(7, 91, 168); 
+    transform: rotate(5deg);
+}
+
+
+/*-----------------------------------------------------------
+Necessário para modificar o tamanho dos botões do carrossel*/
+.fontIcon {
+    height: 50px;
+    width: 50px;
+}
+/*---------------------------------------------------------*/
+
+
+/*-------------------------------------------------------
+Necessário para modificar a cor dos botões do carrossel*/
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%238a2be2' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%238a2be2' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+/*-------------------------------------------------------*/
+
+
+#abouts p {
+    color:rgb(0, 10, 48);
+    font-size: 20px;
+}
+
+
+.marginPls {
+    margin-left: 50px;
+}
