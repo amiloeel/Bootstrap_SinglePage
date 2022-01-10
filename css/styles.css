@@ -390,7 +390,7 @@ header, .navbar {
 }
 
 
-/*responsivo */
+/*responsivo tablet*/
 @media(max-width: 768px) {
 
     /*Geral*/
@@ -403,10 +403,14 @@ header, .navbar {
         top: 20px;
     }
 
-
     /*Barra*/
     .navbar-nav a{
         font-size: 17px;
+    }
+
+    #navbar-links a{
+        font-size: 19px;
+        margin: 0 auto 0 auto;
     }
 
     /*1a seção*/
@@ -445,7 +449,6 @@ header, .navbar {
         margin-top: 80px;
     }
 
-
     /*2a seção*/
     #about-area img {
         height: 730px;
@@ -457,7 +460,6 @@ header, .navbar {
     #about-area img:hover {
         opacity: 1;
     }
-
 
     /*4a seção*/
     .circle-box div {
@@ -494,13 +496,11 @@ header, .navbar {
         margin-right:auto;
     }
 
-
     /*6a seção*/
     #products-area .main-btn {
         font-size: 15px;
         padding: 20px;
     }
-
 
     /*7a seção*/
     #contact-area i {
@@ -518,8 +518,228 @@ header, .navbar {
         font-size: 18px;
         line-height: 13px;
     }
+}
+
+/*responsivo celular*/
+
+@media(max-width: 425px){
+
+    /*Geral*/
+    .main-title {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .main-title::after {
+        top: 8px;
+    }
+
+    /*barra*/
+    #logo{
+        margin:0 5px 0 -5px;
+        width: 22px;
+    }
+
+    #titler{
+        font-size: 12px;
+    }
+
+    .navbar-toggler{
+        width: 17px;
+        height: 17px;
+    }
+
+    .navbar-toggler-icon {
+        margin:-16px 0 0 -7px;
+        width: 13px;
+        height: 13px;
+    }
+
+    #navbar-links a{
+        font-size: 13px;
+        margin: 0 auto 0 auto;
+    }
 
 
+    /*1a seção*/
+    #mainSlider .carousel-caption h1 {
+        margin-top: -30px;
+        font-size: 13px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 11px;
+        margin-bottom: -5px;
+    }
+
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+
+    #mainSlider .carousel-item .main-btn {
+        margin-top:-20px;
+        padding:2px;
+        font-size: 8px;
+    }
+
+    .fontIcon {
+        margin-top: 30px;
+        width: 25px !important;
+    }
+
+    .carousel-indicators {
+        width: 50px;
+        margin: 0 auto 0 auto;
+    }
+
+
+    /*2a seção*/
+    #about-area img {
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    #abouts p{
+        margin-top:0;
+        text-align: center;
+        font-size: 15px !important;
+    }
+
+    #abouts ul{
+        margin-top: 0;
+    }
+
+    #about-list li {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #about-list p{
+        font-size: 10px !important;
+    }
+
+    
+    /*3a seção*/
+    #services-area .main-title {
+        margin-bottom: 40px;
+    }
+    .service-box{
+        margin-bottom:25px;
+    }
+
+    .service-box i {
+        margin-bottom:10px;
+        font-size: 25px;
+    }
+
+    #services-area h4{
+        font-size: 15px;
+        margin:0;
+    }
+
+    #services-area p{
+        font-size: 15px;
+        margin:0;
+    }
+
+    /*4a seção*/
+    #data-area {
+        margin-top:1px
+    }
+
+    .circle-box {
+        width: 50%;
+    }
+
+    #data-area p {
+        font-size:20px;
+    }
+
+    /*5a seção*/
+    #team-area img {
+        width: auto;
+    }
+
+    #team-area h5 {
+        font-size: 18px;
+    }
+
+    #team-area p {
+        font-size: 16px;
+    }
+
+    #team-area .col-xs-2 {
+        margin:0 auto 15px auto
+    }
+
+    /*6a seção*/
+    #products-area {
+        margin-bottom:-10px;
+    }
+
+    #products-area .main-title {
+        margin-top:-50px;
+    }
+
+    #products-area .main-title::after {
+        top:-20px;
+    }
+
+    #products-area .main-btn {
+        font-size: 12px;
+        padding: 3px;
+        margin:0 auto 0 auto;
+    }
+
+    #filter-btn-box {
+        margin-bottom: 20px;
+    }
+
+    /*7a seção*/
+    .contact-box {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    #contact-area .main-title {
+        margin-top:-10px;
+    }
+
+    #contact-area .main-title::after {
+        top:18px;
+    }
+
+    #contact-area i {
+        margin-top:-10px;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    #contact-area p {
+        margin:0;
+        font-size: 16px;
+    }
+
+    #msg-box p{
+        margin-top:10px;
+        font-size: 15px;
+        line-height: 13px;
+        margin-bottom:20px;
+    }
+
+    #contact-form .main-btn {
+        font-size: 15px;
+        padding: 15px;
+        height: auto;
+    }
+
+    #copy-area .container p{
+        font-size:15px;
+    }
+
+    #copy-area .container a{
+        font-size:15px;
+    }
 
 }
 
