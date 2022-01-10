@@ -22,6 +22,22 @@ a {
     text-decoration: none;
 }
 
+.main-title {
+    font-size: 35px;
+    color:#41007e;
+    margin: -20px 0 75px 0;
+    text-align: center;
+}
+                     /* cria linha inferior */
+.main-title::after {
+    content: "";
+    border-top: 2px solid #41007e;
+    width: 35%;
+    position: absolute;
+    top: 40px;
+    left: 32.5%;
+}
+
 
 /* Barra de Navegação */
 
@@ -40,6 +56,19 @@ header, .navbar {
     margin-right: 10px;
     margin-top:5px;
     margin-bottom:5px;
+    transition: 3s;
+}
+
+#logo:hover {
+    transform: rotate(-360deg);
+}
+
+#titler{
+    color:rgb(205, 157, 250);
+}
+
+#titler:hover{
+    color:rgb(173, 215, 255);
 }
 
 .navbar-nav a{
@@ -112,23 +141,6 @@ header, .navbar {
 /* Sobre a empresa */
 #about-area {
     background-color: #dcf8ff;
-}
-
-
-.main-title {
-    font-size: 35px;
-    color:#41007e;
-    margin: -20px 0 75px 0;
-    text-align: center;
-}
-                     /* cria linha inferior */
-.main-title::after {
-    content: "";
-    border-top: 2px solid #41007e;
-    width: 35%;
-    position: absolute;
-    top: 40px;
-    left: 32.5%;
 }
 
 #about-list {
@@ -233,7 +245,7 @@ header, .navbar {
 }
 
 #team-area img:hover{
-    filter: saturate(50%);
+    filter: saturate(100%);
 }
 
 
@@ -376,6 +388,141 @@ header, .navbar {
     padding: 10px 0;
     text-align: center;
 }
+
+
+/*responsivo */
+@media(max-width: 768px) {
+
+    /*Geral*/
+    .main-title {
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+
+    .main-title::after {
+        top: 20px;
+    }
+
+
+    /*Barra*/
+    .navbar-nav a{
+        font-size: 17px;
+    }
+
+    /*1a seção*/
+    .container {
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+
+    #nav-container {
+        margin-top: 0;
+    }
+
+    #mainSlider {
+        margin-bottom: 0;
+    }
+
+    #mainSlider .carousel-caption h1 {
+        font-size: 27px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+
+    #mainSlider .carousel-item .main-btn {
+        padding:10px;
+        font-size: 15px;
+    }
+
+    .fontIcon {
+        margin-top: 80px;
+    }
+
+
+    /*2a seção*/
+    #about-area img {
+        height: 730px;
+        filter: sepia(100%) hue-rotate(230deg) saturate(200%);
+        opacity: 0.8;
+        transition: .5s;
+    }
+
+    #about-area img:hover {
+        opacity: 1;
+    }
+
+
+    /*4a seção*/
+    .circle-box div {
+        padding: 0 10px;
+    }
+
+    #data-area p {
+        font-size:20px;
+    }
+
+    /*5a seção*/
+    #team-area .main-title {
+        margin-top: 2px;
+    }
+
+    #team-area .main-title::after {
+        margin-top: 20px;
+    }
+
+    #team-area img {
+        width: 130px;
+    }
+
+    #team-area h5 {
+        font-size: 15px;
+    }
+
+    #team-area p {
+        font-size: 11px;
+    }
+
+    #team-area .col-xs-2 {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    /*6a seção*/
+    #products-area .main-btn {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+
+    /*7a seção*/
+    #contact-area i {
+        font-size: 43px;
+        margin-bottom: 10px;
+    }
+
+    #contact-area p {
+        margin:0;
+        font-size: 16px;
+    }
+
+    #msg-box p{
+        margin-top: 100px;
+        font-size: 18px;
+        line-height: 13px;
+    }
+
+
+
+}
+
 
 /*-----------------------------------------------------------
 Necessário para modificar o tamanho dos botões do carrossel*/
